@@ -1,0 +1,313 @@
+@media screen and (max-width: 1023px) {
+    .container{
+        width: 720px;
+        margin: auto;
+    }
+    .nav-data{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav__toggle {
+        position: relative;
+        width: 32px;
+        height: 32px;
+      }
+    .menu {
+        list-style: none;
+    }
+    .menu li a{
+        color: var(--white);
+    }
+    .fa-xmark,
+.fa-bars {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  inset: 0;
+  margin: auto;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: opacity 0.1s, transform 0.4s;
+}
+.fa-xmark {
+  opacity: 0;
+}
+.nav__menu {
+    position: absolute;
+    right: 0;
+    top: 2.5rem;
+    width: 50%;
+    height: calc(100vh - 2.5rem);
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.3s;
+  }
+.nav-link {
+    color:white;
+    background-color: #13164c;
+    /* background-color: var(--blue); */
+    font-weight: 900px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color .3s;
+  }
+.show-menu {
+    opacity: 1;
+    top: 3.5rem;
+    pointer-events: initial;
+  }
+  .show-icon .fa-bars {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  .show-icon .fa-xmark {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+  .nav__menu .btn{
+    margin: 15px;
+  }
+}
+
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .container{
+        width: 720px;
+    }
+    nav{
+        display: none;
+    }
+    /* .menu{
+        display: none;
+    }
+    nav button{
+        display: none;
+    } */
+    .flex-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner .flex-box{
+        margin-bottom: 30px;
+    }
+    /* .logo-list {
+        width: 150px;
+    } */
+    .inline-section {
+        width: 50%;
+    }
+    .banner-bottom {
+        padding-top: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .result input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .result .btn-2{
+        margin: 10px 0px;
+    }
+    .result button.btn {
+        margin-top: 30px;
+    }
+    .left-section, .right-section {
+        width: 100%;
+    }
+    .left-section h1{
+        margin-bottom: 15px;
+    }
+    .card {
+        flex-direction: column;
+        align-items: start;
+    }
+    .card-1{
+        width: 70%;
+        margin-bottom: 50px;
+    }
+    .twin-card{
+        width: 100%;
+    }
+    .card-2{
+        width: 48%;
+        
+    }
+    .register{
+        margin: auto;
+        width: 100%;
+    }
+
+    .status{
+        margin: auto;
+    }
+    .Symptoms .flex-box {
+        margin: auto;
+        padding: 15px 0px;
+        flex-direction: row;
+    }
+    .btn-cv .btn {
+        width: 210px;
+    }
+    .test-card-1 ,.test-card-2{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .testimonial {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .contact-box {
+        width: 80%;
+    }
+    .footer-link{
+        margin: 10px 0px;
+    }
+}
+
+
+
+
+
+/* Media query for mobile */
+@media screen and (max-width: 767px) {
+    *{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .container{
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    .logo{
+        width: 150px;
+    }
+    .flex-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .firstright-inner {
+        margin-left: 0px;
+    }
+    .first-img {
+        width: 50px;
+        height: 50px;
+        margin-right: -25px;
+    }
+    .center-img{
+        width: 200px;
+        height: 250px;
+    }
+    .last-img {
+        width: 50px;
+        height: 50px;
+        margin-left: -25px;
+    }
+    .img-list {
+        margin-right: 10px;
+        width: 90px;
+    }
+    .bottom-img {
+        padding: 10px;
+        margin: -50px 0px 0px 10px;
+    }
+    .inline-section {margin: 10px 0px;
+    }
+    .banner-bottom {
+        flex-direction: column;
+    }
+    .inline-section .btn-1{
+        margin: 0px;
+    }
+    /* .logo-list {
+        width: 60px;
+    } */
+    .result input{
+        width: 85%;
+        margin-bottom: 10px;
+        /* margin: auto; */
+    }
+    .left-section, .right-section {
+        width: 100%;
+    }
+    .left-section h1{
+        margin-bottom: 15px;
+    }
+    .card {
+        flex-direction: column;
+        align-items: start;
+    }
+    .card-1{
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 30px
+    }
+    .twin-card{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card-2{
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+    .rectangle {
+        width: 100%;
+        margin: auto;
+    }
+    .virus {
+        width: 70px;
+        margin: 0px 0px -50px -10px;
+    }
+    .vaccine{
+        display: inline-flex;
+        margin: auto;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 50px 0px;
+        width: 100%;
+        min-width: 280px;
+        height: 320px;
+    }
+    .status{
+        margin: auto;
+    }
+    .Symptoms .flex-box {
+        width: 100% !important;
+        margin: auto;
+        padding: 15px 0px;
+        flex-direction: row;
+    }
+    .btn-cv .btn {
+        width: 100px;
+    }
+    .test-card-1 ,.test-card-2{
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .testimonial {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .contact-box {
+        width: 90%;
+        padding: 30px 15px;
+        margin-bottom: -100px; 
+    }
+    .footer-link{
+        margin: 10px 0px;
+    }
+}
